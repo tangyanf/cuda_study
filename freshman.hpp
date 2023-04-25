@@ -28,7 +28,7 @@ void initData(float* idata, int size) {
     }
 }
 
-void initData_inf(int* idata, int size) {
+void initData_int(int* idata, int size) {
     time_t t;
     srand((unsigned)time(&t));
     for (int i = 0; i < size; i++) {
@@ -38,7 +38,7 @@ void initData_inf(int* idata, int size) {
 
 void printMatrix(float* C, const int nx, const int ny) {
     float* ic = C;
-    printf("Matrix<%d, %d>: ", nx, ny);
+    printf("Matrix<%d, %d>: \n", nx, ny);
     for (int i = 0; i < ny; i++) {
         for (int j = 0; j < nx; j++) {
             printf("%6f ", ic[j]);
